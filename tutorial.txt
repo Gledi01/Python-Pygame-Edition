@@ -1,0 +1,155 @@
+🎬 Tutorial PHP: Percabangan dalam PHP untuk Pemula
+
+1. Pembukaan
+
+“Halo semuanya, selamat datang kembali di channel saya.
+
+Pada video kali ini, kita akan belajar tentang percabangan dalam bahasa pemrograman PHP.
+
+Percabangan merupakan salah satu konsep dasar dalam pemrograman yang berfungsi untuk menentukan tindakan berdasarkan kondisi tertentu.
+
+Nah, langsung saja kita masuk ke pembahasannya.”
+
+2. Pengertian Percabangan
+
+“Pertama, kita akan membahas pengertian percabangan.
+
+Percabangan adalah struktur kode yang memungkinkan program menjalankan perintah yang berbeda berdasarkan kondisi yang diberikan.
+
+Contohnya, ketika kita ingin membuat program untuk menentukan apakah seseorang sudah cukup umur atau belum, kita bisa menggunakan percabangan.
+
+Dalam PHP, terdapat beberapa jenis percabangan, yaitu "if", "if else", "if elseif else", dan "switch".”
+
+3. Percabangan If
+
+“Sekarang kita mulai dari percabangan yang pertama, yaitu "if".
+
+Percabangan "if" digunakan untuk menjalankan suatu perintah apabila kondisi yang ditentukan bernilai benar atau "true".
+
+Perhatikan contoh kode berikut.
+
+<?php
+$nilai = 90;
+
+if ($nilai >= 75) {
+    echo "Selamat, kamu lulus!";
+}
+?>
+
+Di sini, kita membuat variabel bernama "$nilai" dengan nilai 90.
+
+Kemudian, kita menggunakan kondisi "if" untuk memeriksa apakah nilai tersebut lebih besar atau sama dengan 75.
+
+Karena nilai 90 memenuhi kondisi tersebut, program akan menampilkan tulisan ‘Selamat, kamu lulus!’.
+
+Jika kondisinya salah, perintah di dalam "if" tidak akan dijalankan.”
+
+4. Percabangan If Else
+
+“Selanjutnya, kita akan belajar tentang "if else".
+
+Berbeda dengan "if" saja, percabangan "if else" menyediakan dua kemungkinan tindakan, yaitu ketika kondisi benar dan ketika kondisi salah.
+
+Contohnya seperti berikut.
+
+<?php
+$nilai = 60;
+
+if ($nilai >= 75) {
+    echo "Kamu lulus!";
+} else {
+    echo "Kamu belum lulus.";
+}
+?>
+
+Pada contoh ini, nilai siswa adalah 60.
+
+Karena nilai tersebut kurang dari 75, kondisi "if" bernilai salah. Oleh karena itu, program akan menjalankan bagian "else" dan menampilkan tulisan ‘Kamu belum lulus’.
+
+Jadi, "if else" berguna ketika kita membutuhkan dua pilihan berdasarkan suatu kondisi.”
+
+5. Percabangan If Elseif Else
+
+“Berikutnya adalah "if elseif else".
+
+Percabangan ini digunakan ketika kita memiliki lebih dari dua kemungkinan kondisi.
+
+Misalnya, kita ingin menentukan predikat nilai siswa berdasarkan nilai yang diperoleh.
+
+Perhatikan kode berikut.
+
+<?php
+$nilai = 85;
+
+if ($nilai >= 90) {
+    echo "Predikat A";
+} elseif ($nilai >= 80) {
+    echo "Predikat B";
+} elseif ($nilai >= 70) {
+    echo "Predikat C";
+} else {
+    echo "Predikat D";
+}
+?>
+
+Pada program ini, kita memeriksa nilai secara berurutan.
+
+Jika nilai minimal 90, program menampilkan predikat A.
+
+Jika kondisi pertama tidak terpenuhi, program akan memeriksa apakah nilai minimal 80. Jika benar, program menampilkan predikat B.
+
+Jika kondisi berikutnya juga tidak terpenuhi, program melanjutkan pemeriksaan sampai menemukan kondisi yang benar.
+
+Karena nilai yang kita masukkan adalah 85, hasilnya adalah ‘Predikat B’.
+
+Perlu diingat, PHP akan menjalankan blok dari kondisi pertama yang bernilai benar, kemudian melewati kondisi lainnya.”
+
+6. Percabangan Switch
+
+“Jenis percabangan berikutnya adalah "switch".
+
+Percabangan "switch" biasanya digunakan ketika kita ingin membandingkan satu variabel dengan beberapa nilai tertentu.
+
+Contohnya seperti berikut.
+
+<?php
+$hari = 2;
+
+switch ($hari) {
+    case 1:
+        echo "Senin";
+        break;
+    case 2:
+        echo "Selasa";
+        break;
+    case 3:
+        echo "Rabu";
+        break;
+    default:
+        echo "Hari tidak tersedia";
+}
+?>
+
+Pada contoh ini, variabel "$hari" memiliki nilai 2.
+
+PHP akan mencocokkan nilai tersebut dengan setiap "case".
+
+Karena nilai 2 cocok dengan "case 2", program akan menampilkan tulisan ‘Selasa’.
+
+Kata kunci "break" digunakan untuk menghentikan pemeriksaan "switch" setelah cabang yang sesuai dijalankan.
+
+Sementara itu, "default" akan dijalankan apabila tidak ada "case" yang cocok.”
+
+7. Kesimpulan
+
+“Jadi, kesimpulannya, percabangan merupakan bagian penting dalam PHP yang memungkinkan program mengambil keputusan berdasarkan kondisi tertentu.
+
+Kita sudah mempelajari empat jenis percabangan, yaitu "if", "if else", "if elseif else", dan "switch".
+
+Masing-masing memiliki kegunaan yang berbeda, sehingga kita perlu memilih jenis percabangan sesuai kebutuhan program yang sedang dibuat.
+
+Sekian tutorial PHP kali ini. Terima kasih sudah menonton video ini sampai selesai.
+
+Jangan lupa like, subscribe, dan nyalakan lonceng notifikasinya agar tidak ketinggalan tutorial berikutnya.
+
+Sampai jumpa di video selanjutnya. Terima kasih!”
